@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News & Updates | Rhythmcore Records</title>
+    <meta name="description" content="Discover the latest music releases, artist updates and announcements from Rhythmcore Records.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+<header class="site-header">
+    <div class="container navbar">
+
+        <a href="index.html" class="brand">
+            <img src="images/logo.png" alt="Rhythmcore Records" class="brand-logo">
+
+            <span class="brand-name">
+                RHYTHMCORE
+                <span>RECORDS</span>
+            </span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="artists.html">Artists</a>
+            <a href="music.html">Music</a>
+            <a href="news.html">News</a>
+            <a href="careers.html">Careers</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="header-cta">
+            JOIN THE LABEL
+            <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+
+    </div>
+</header>
+
+
+
+
+    <!-- NEWS HERO -->
+    <section class="news-hero">
+        <div class="container">
+            <p class="news-eyebrow">BEHIND THE SOUND</p>
+
+            <h1>THE LATEST <span>NEWS</span></h1>
+
+            <p>
+                Music, movement and everything happening at
+                Rhythmcore Records. Stay connected to our journey.
+            </p>
+
+            <a href="#news-feed" class="btn btn-primary">
+                Explore Updates <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- NEWS FEED -->
+    <main class="news-section" id="news-feed">
+        <div class="container">
+
+            <div class="news-heading">
+                <div>
+                    <p class="news-eyebrow">FROM THE LABEL</p>
+                    <h2>News & <span>Updates</span></h2>
+                </div>
+
+                <p class="news-intro">
+                    Discover our music, artists and latest developments.
+                </p>
+            </div>
+
+            <!-- FILTERS -->
+            <div class="news-filters" role="group" aria-label="Filter news">
+                <button class="news-filter active"
+                        data-category="all"
+                        aria-pressed="true">All</button>
+
+                <button class="news-filter"
+                        data-category="releases"
+                        aria-pressed="false">Music Releases</button>
+
+                <button class="news-filter"
+                        data-category="artists"
+                        aria-pressed="false">Artists</button>
+
+                <button class="news-filter"
+                        data-category="announcements"
+                        aria-pressed="false">Announcements</button>
+            </div>
+
+            <!-- NEWS CARDS -->
+            <div class="news-grid" id="news-grid">
+
+                <!-- HATE RELEASE -->
+                <article class="news-card" data-category="releases">
+                    <a class="news-image" href="music.html"
+                       aria-label="Explore the Hate release">
+                        <img src="images/hate.jpg"
+                             alt="Hate single cover artwork"
+                             loading="lazy">
+
+                        <span class="news-category">MUSIC RELEASE</span>
+                    </a>
+
+                    <div class="news-card-content">
+                        <p class="news-date">FEATURED RELEASE</p>
+
+                        <h3>Hate — Out Now</h3>
+
+                        <p>
+                            Discover "Hate", featuring Teandx_07 and
+                            Mufasa Scoot. Listen to the track and explore
+                            more music from the label.
+                        </p>
+
+                        <a href="https://youtu.be/OcTQL18oby0?si=vB1qOuspgiEp0Fi4"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="news-read-more">
+                            Listen on YouTube
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- COST ON ME RELEASE -->
+                <article class="news-card" data-category="releases">
+                    <a class="news-image" href="music.html"
+                       aria-label="Explore the Cost on Me release">
+                        <img src="images/cost-on-me.jpg"
+                             alt="Cost on Me single cover artwork"
+                             loading="lazy">
+
+                        <span class="news-category">MUSIC RELEASE</span>
+                    </a>
+
+                    <div class="news-card-content">
+                        <p class="news-date">FEATURED RELEASE</p>
+
+                        <h3>Cost on Me</h3>
+
+                        <p>
+                            Check out "Cost on Me", featuring Mufasa Scoot,
+                            Teandx_07 and Blvc Pnts. Visit our Music page
+                            for more details.
+                        </p>
+
+                        <a href="https://youtu.be/7siOw4yw8R0?si=4oVndIWFqEprvzZm"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="news-read-more">
+                            Listen on YouTube
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- LABEL STORY -->
+                <article class="news-card" data-category="announcements">
+                    <div class="news-placeholder-image">
+                        <i class="fas fa-record-vinyl"></i>
+                        <span>OUR JOURNEY</span>
+                    </div>
+
+                    <div class="news-card-content">
+                        <p class="news-date">ABOUT THE LABEL</p>
+
+                        <h3>Independent Sound. Bigger Vision.</h3>
+
+                        <p>
+                            Rhythmcore Records was founded in 2025 and
+                            officially registered in 2026, with a mission
+                            to help upcoming artists develop their sound.
+                        </p>
+
+                        <a href="about.html" class="news-read-more">
+                            Our Story
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- ARTIST COMMUNITY -->
+                <article class="news-card" data-category="artists">
+                    <div class="news-placeholder-image">
+                        <i class="fas fa-microphone-lines"></i>
+                        <span>ARTIST SPOTLIGHT</span>
+                    </div>
+
+                    <div class="news-card-content">
+                        <p class="news-date">MEET OUR ARTISTS</p>
+
+                        <h3>The Artists Behind the Sound</h3>
+
+                        <p>
+                            Get to know the artists connected with
+                            Rhythmcore Records and explore the people
+                            contributing to our musical journey.
+                        </p>
+
+                        <a href="artists.html" class="news-read-more">
+                            Explore Artists
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- SOCIAL UPDATES -->
+                <article class="news-card" data-category="announcements">
+                    <div class="news-placeholder-image">
+                        <i class="fas fa-share-nodes"></i>
+                        <span>STAY CONNECTED</span>
+                    </div>
+
+                    <div class="news-card-content">
+                        <p class="news-date">FOLLOW THE MOVEMENT</p>
+
+                        <h3>Connect With Rhythmcore</h3>
+
+                        <p>
+                            Follow our official social media accounts
+                            to keep up with music, videos and label
+                            announcements.
+                        </p>
+
+                        <a href="contact.html" class="news-read-more">
+                            Find Our Socials
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- CONTACT -->
+                <article class="news-card" data-category="artists">
+                    <div class="news-placeholder-image">
+                        <i class="fas fa-headphones"></i>
+                        <span>YOUR NEXT MOVE</span>
+                    </div>
+
+                    <div class="news-card-content">
+                        <p class="news-date">GET IN TOUCH</p>
+
+                        <h3>Have a Project in Mind?</h3>
+
+                        <p>
+                            Interested in discussing a collaboration
+                            or introducing your music? Get in touch
+                            with Rhythmcore Records.
+                        </p>
+
+                        <a href="contact.html" class="news-read-more">
+                            Contact the Label
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="news-no-results" id="news-no-results" hidden>
+                No news items found in this category.
+            </p>
+
+        </div>
+    </main>
+
+
+    <!-- SOCIAL CTA -->
+    <section class="news-cta">
+        <div class="container">
+            <p class="news-eyebrow">DON'T MISS A BEAT</p>
+
+            <h2>Stay in the <span>Rhythm.</span></h2>
+
+            <p>
+                Follow Rhythmcore Records for updates on our musical journey.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary">
+                Connect With Us <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <a href="index.html" class="brand footer-brand">
+                <img src="images/logo.png" alt="Rhythmcore Records logo" class="brand-logo">
+                <span class="brand-name">RHYTHMCORE <span>RECORDS</span></span>
+            </a>
+
+            <p>&copy; <span id="current-year"></span> Rhythmcore Records. All rights reserved.</p>
+
+            <div class="footer-socials">
+                <a href="https://www.youtube.com/@rhythmcorerecordsofficial"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@rhythmcorerecords?lang=en"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=61579988221298"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/rhythmcorerecords/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="js/news.js"></script>
+
+</body>
+</html>

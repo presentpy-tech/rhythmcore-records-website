@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Artist Submissions | Rhythmcore Records</title>
+    <meta name="description" content="Are you an upcoming artist? Submit your music to Rhythmcore Records for consideration. We welcome new sounds, fresh talent and independent creativity.">
+
+    <meta name="theme-color" content="#080808">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript files -->
+    <script src="js/main.js" defer></script>
+    <script src="js/artists-submit.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container navbar">
+
+            <a href="index.html" class="brand">
+                <img
+                    src="images/logo.png"
+                    alt="Rhythmcore Records logo"
+                    class="brand-logo"
+                >
+                <span class="brand-name">RHYTHMCORE RECORDS</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="artists.html">Artists</a>
+                <a href="music.html">Music</a>
+                <a href="news.html">News</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="submission-hero">
+            <div class="container">
+
+                <p class="submission-eyebrow">
+                    YOUR SOUND. YOUR STORY. YOUR FUTURE.
+                </p>
+
+                <h1>
+                    YOUR MUSIC.<br>
+                    <span>YOUR NEXT CHAPTER.</span>
+                </h1>
+
+                <p class="submission-intro">
+                    Every artist has a sound worth exploring.
+                    If you create music and believe in what you do,
+                    we want to hear from you.
+                </p>
+
+                <a href="#artist-submission-form" class="btn btn-primary">
+                    Submit Your Music
+                </a>
+
+            </div>
+        </section>
+
+        <!-- ABOUT THE SUBMISSION PROCESS -->
+        <section class="section-padding">
+            <div class="container submission-about">
+
+                <div class="submission-about-text">
+
+                    <p class="submission-eyebrow">BE HEARD</p>
+
+                    <h2>A HOME FOR <span>NEW SOUND.</span></h2>
+
+                    <p>
+                        Rhythmcore Records is an independent South African
+                        record label focused on helping upcoming artists
+                        develop their sound and pursue their musical goals.
+                    </p>
+
+                    <p>
+                        We welcome artists across genres, from amapiano
+                        and hip-hop to afropop and sounds that don't fit
+                        into a single category.
+                    </p>
+
+                    <p>
+                        You don't need to be famous to introduce yourself.
+                        Tell us who you are, share your music and let us
+                        discover what you bring to the scene.
+                    </p>
+
+                </div>
+
+                <div class="submission-steps">
+
+                    <article class="submission-step">
+                        <span>01</span>
+                        <div>
+                            <h3>Introduce Yourself</h3>
+                            <p>Tell us about yourself and your music.</p>
+                        </div>
+                    </article>
+
+                    <article class="submission-step">
+                        <span>02</span>
+                        <div>
+                            <h3>Share Your Sound</h3>
+                            <p>
+                                Give us links where we can listen
+                                to your work.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="submission-step">
+                        <span>03</span>
+                        <div>
+                            <h3>We'll Review It</h3>
+                            <p>
+                                Our team can consider your submission
+                                and contact you if there is a potential fit.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ARTIST SUBMISSION FORM -->
+        <section
+            class="section-padding submission-form-section"
+            id="artist-submission-form"
+        >
+
+            <div class="container">
+
+                <div class="submission-heading">
+
+                    <p class="submission-eyebrow">TAKE THE FIRST STEP</p>
+
+                    <h2>SUBMIT YOUR <span>MUSIC.</span></h2>
+
+                    <p>
+                        Complete the form below. Please make sure your
+                        music links work before submitting.
+                    </p>
+
+                </div>
+
+                <!--
+                    Formspree receives the submission.
+                    JavaScript prevents normal navigation and handles
+                    the response on this same page.
+                -->
+                <form
+                    id="artistSubmissionForm"
+                    class="artist-submission-form"
+                    action="https://formspree.io/f/mljgbodk"
+                    method="POST"
+                >
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Artist Submission - Rhythmcore Records"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="submission_type"
+                        value="Artist Music Submission"
+                    >
+
+                    <!-- Spam protection honeypot -->
+                    <div class="submission-honeypot" aria-hidden="true">
+                        <label for="artistWebsite">Leave this field empty</label>
+                        <input
+                            type="text"
+                            id="artistWebsite"
+                            name="_gotcha"
+                            tabindex="-1"
+                            autocomplete="off"
+                        >
+                    </div>
+
+                    <div class="submission-form-grid">
+
+                        <!-- ARTIST NAME -->
+                        <div class="submission-field">
+                            <label for="artistName">
+                                Artist / Stage Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="artistName"
+                                name="artist_name"
+                                placeholder="Your artist name"
+                                maxlength="100"
+                                autocomplete="nickname"
+                                required
+                            >
+                        </div>
+
+                        <!-- FULL NAME -->
+                        <div class="submission-field">
+                            <label for="realName">Full Name *</label>
+
+                            <input
+                                type="text"
+                                id="realName"
+                                name="full_name"
+                                placeholder="Your full name"
+                                maxlength="150"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="submission-field">
+                            <label for="artistEmail">Email Address *</label>
+
+                            <input
+                                type="email"
+                                id="artistEmail"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <!-- LOCATION -->
+                        <div class="submission-field">
+                            <label for="artistLocation">Country / City *</label>
+
+                            <input
+                                type="text"
+                                id="artistLocation"
+                                name="location"
+                                placeholder="e.g. Johannesburg, South Africa"
+                                maxlength="120"
+                                autocomplete="country-name"
+                                required
+                            >
+                        </div>
+
+                        <!-- GENRE -->
+                        <div class="submission-field">
+                            <label for="artistGenre">Main Genre *</label>
+
+                            <select
+                                id="artistGenre"
+                                name="genre"
+                                required
+                            >
+                                <option value="">Select your genre</option>
+                                <option value="Amapiano">Amapiano</option>
+                                <option value="Hip-hop / Rap">Hip-hop / Rap</option>
+                                <option value="Afropop">Afropop</option>
+                                <option value="Afrobeats">Afrobeats</option>
+                                <option value="R&B / Soul">R&amp;B / Soul</option>
+                                <option value="Gospel">Gospel</option>
+                                <option value="House / Dance">House / Dance</option>
+                                <option value="Pop">Pop</option>
+                                <option value="Alternative / Experimental">Alternative / Experimental</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- CAREER STAGE -->
+                        <div class="submission-field">
+                            <label for="artistExperience">Career Stage</label>
+
+                            <select
+                                id="artistExperience"
+                                name="career_stage"
+                            >
+                                <option value="">Select an option</option>
+                                <option value="Just starting out">Just starting out</option>
+                                <option value="Independent artist releasing music">Independent artist releasing music</option>
+                                <option value="Experienced independent artist">Experienced independent artist</option>
+                                <option value="Previously signed artist">Previously signed artist</option>
+                            </select>
+                        </div>
+
+                        <!-- MAIN MUSIC LINK -->
+                        <div class="submission-field submission-full-width">
+                            <label for="musicLink">Music Link *</label>
+
+                            <input
+                                type="url"
+                                id="musicLink"
+                                name="music_link"
+                                placeholder="https://youtube.com/..."
+                                required
+                            >
+
+                            <small>
+                                Share a link to your music on YouTube,
+                                SoundCloud, Audiomack or another accessible platform.
+                            </small>
+                        </div>
+
+                        <!-- ADDITIONAL LINKS -->
+                        <div class="submission-field submission-full-width">
+                            <label for="additionalLinks">
+                                Other Links (Optional)
+                            </label>
+
+                            <textarea
+                                id="additionalLinks"
+                                name="additional_links"
+                                rows="3"
+                                maxlength="1500"
+                                placeholder="Spotify, Apple Music, Instagram, TikTok or other music links"
+                            ></textarea>
+                        </div>
+
+                        <!-- ARTIST BIO -->
+                        <div class="submission-field submission-full-width">
+                            <label for="artistBio">
+                                Tell Us About Yourself *
+                            </label>
+
+                            <textarea
+                                id="artistBio"
+                                name="artist_bio"
+                                rows="5"
+                                minlength="20"
+                                maxlength="2000"
+                                placeholder="Who are you as an artist? What inspires your sound? What are your goals?"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <!-- ADDITIONAL MESSAGE -->
+                        <div class="submission-field submission-full-width">
+                            <label for="artistMessage">
+                                Anything Else You Want Us to Know?
+                            </label>
+
+                            <textarea
+                                id="artistMessage"
+                                name="message"
+                                rows="4"
+                                maxlength="2000"
+                                placeholder="Tell us about your latest release, plans or what you hope to achieve."
+                            ></textarea>
+                        </div>
+
+                    </div>
+
+                    <!-- CONSENT -->
+                    <div class="submission-consent">
+
+                        <label class="submission-checkbox">
+                            <input
+                                type="checkbox"
+                                id="submissionConsent"
+                                name="submission_consent"
+                                value="I agree to the submission terms"
+                                required
+                            >
+
+                            <span>
+                                I confirm that I have the right to share the
+                                music links I submit, and I consent to
+                                Rhythmcore Records using my information to
+                                review this submission and contact me about it. *
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <p class="submission-terms">
+                        Submitting your music does not guarantee a record
+                        deal, contract, response or acceptance. Please do not
+                        send confidential information or music you do not
+                        have permission to share.
+                    </p>
+
+                    <!-- SUBMIT BUTTON -->
+                    <button
+                        type="submit"
+                        id="artistSubmitButton"
+                        class="btn btn-primary submission-submit-btn"
+                    >
+                        Submit Artist Application
+                    </button>
+
+                    <!-- INLINE STATUS / ERROR MESSAGE -->
+                    <p
+                        id="artistFormFeedback"
+                        class="artist-form-feedback"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+                <!-- SUCCESS MESSAGE: SHOWN WITHOUT LEAVING THIS PAGE -->
+                <div
+                    id="artistSubmissionSuccess"
+                    class="artist-submission-success"
+                    role="status"
+                    tabindex="-1"
+                    hidden
+                >
+
+                    <div class="submission-success-icon" aria-hidden="true">
+                        ✓
+                    </div>
+
+                    <p class="submission-eyebrow">SUBMISSION RECEIVED</p>
+
+                    <h2>THANK YOU FOR <span>SHARING YOUR SOUND.</span></h2>
+
+                    <p>
+                        Your artist submission has been sent successfully.
+                        Thank you for introducing yourself to Rhythmcore Records.
+                    </p>
+
+                    <p>
+                        If there is a potential fit, the label may contact
+                        you using the email address you provided.
+                    </p>
+
+                    <button
+                        type="button"
+                        id="submitAnotherArtist"
+                        class="btn btn-primary"
+                    >
+                        Submit Another Artist
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CLOSING SECTION -->
+        <section class="submission-bottom">
+            <div class="container">
+
+                <p class="submission-eyebrow">RHYTHMCORE RECORDS</p>
+
+                <h2>KEEP CREATING. <span>KEEP MOVING.</span></h2>
+
+                <p>
+                    Your journey is yours to build. Thank you for letting
+                    us be part of the story.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+
+            <p>
+                &copy; <span id="currentYear"></span>
+                Rhythmcore Records. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
