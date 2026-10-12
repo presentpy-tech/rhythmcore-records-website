@@ -4419,3 +4419,43 @@ button:focus-visible {
         padding: 22px 16px;
     }
 }
+
+/* ================= YOUTUBE VIDEO PLAYER ================= */
+
+.video-placeholder {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #151515;
+    border: 1px solid rgba(220, 184, 98, 0.25);
+}
+
+.video-placeholder iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+    border-radius: inherit;
+}
+
+.video-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+@media (max-width: 768px) {
+    .video-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .video-placeholder {
+        width: 100%;
+    }
+}
